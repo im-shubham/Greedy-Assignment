@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/splashAnimation1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            app:lottie_autoPlay="true"
+            android:layout_marginRight="10dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/musixicon"
+            tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/main"
+            android:text="Music Wiki">
+
+        </TextView>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/splashAnimation2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            app:lottie_autoPlay="true"
+            android:layout_marginRight="10dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/musixicon"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Welcome !"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Choose a Genre to Start With"/>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/expand_button"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            android:background="@drawable/image_button"
+            android:layout_marginTop="1dp">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/genresRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+
+        android:layout_height="match_parent" />
+
+</LinearLayout>
